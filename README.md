@@ -1,8 +1,8 @@
-# Simple Chat App
 
 ## Overview
 
-This project aims to create a simple real-time chat application. It uses Next.js for the frontend and FastAPI for the backend.
+This project aims to create a simple real-time chat application. 
+It uses Next.js for the frontend and FastAPI for the backend.
 
 ## Development Environment
 
