@@ -1,0 +1,17 @@
+version: '3'
+services:
+  backend:
+    image: tiangolo/uvicorn-gunicorn-fastapi:python3.9
+    volumes:
+      - ./backend:/app
+    ports:
+      - '8000:80'
+
+  frontend:
+    image: node:14
+    volumes:
+      - ./frontend:/app
+    working_dir: /app
+    ports:
+      - '3000:3000'
+    command: sh -c "npm install typescript @types/react @types/node && npm run dev"
