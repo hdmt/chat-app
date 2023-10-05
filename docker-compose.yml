@@ -8,10 +8,10 @@ services:
       - '8000:80'
 
   frontend:
-    image: node:14
+    image: node:alpine
     volumes:
       - ./frontend:/app
     working_dir: /app
     ports:
       - '3000:3000'
-    command: sh -c "npm install typescript @types/react @types/node && npm run dev"
+    command: npm run dev
